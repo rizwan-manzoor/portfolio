@@ -1937,6 +1937,7 @@ textarea.w-select {
     color: #333;
     text-decoration: none;
     position: relative;
+    margin-left: 12px;
 }
 
 .w-nav-link {
@@ -2070,6 +2071,7 @@ textarea.w-select {
 
     .w-nav-brand {
         padding-left: 10px;
+        margin-left: 12px;
     }
 }
 
@@ -2867,7 +2869,9 @@ blockquote {
 
 .image {
     width: auto;
+    max-width: none;
     height: auto;
+    max-height: 100%;
 }
 
 .text-size-large {
@@ -3340,14 +3344,14 @@ blockquote {
     justify-content: space-between;
     width: 100%;
     height: 100%;
-    min-height: 55vh;
+    min-height: auto;
     display: flex;
 }
 
 .works-image {
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: auto;
     display: flex;
     position: relative;
     overflow: hidden;
@@ -3382,6 +3386,7 @@ blockquote {
 .blog-image-wrapper {
     border-radius: 1.5rem;
     width: auto;
+    max-width: 100%;
     height: auto;
     position: relative;
     overflow: hidden;
@@ -3397,7 +3402,7 @@ blockquote {
 
 .work-template-images {
     width: 100%;
-    height: 60vh;
+    height: auto;
     margin-top: 4rem;
     margin-bottom: 4rem;
     position: relative;
@@ -3410,13 +3415,14 @@ blockquote {
 
 .work-template-images.vertical {
     width: 50%;
-    height: 90vh;
+    height: auto;
     margin-bottom: 6rem;
     margin-left: 6vw;
     margin-right: auto;
 }
 
 .work-template-images.vertical.right {
+    height: auto;
     margin-left: auto;
     margin-right: 6vw;
 }
@@ -4012,6 +4018,34 @@ blockquote {
     border-radius: 8px;
 }
 
+.image-10 {
+    min-width: 100%;
+    max-width: none;
+    max-height: 100%;
+}
+
+.image-11 {
+    max-width: none;
+}
+
+.image-14,
+.image-15,
+.image-16,
+.image-17,
+.image-18 {
+    border-radius: 8px;
+}
+
+.image-19,
+.image-20 {
+    min-width: 100%;
+}
+
+.div-block-2,
+.div-block-3 {
+    text-align: center;
+}
+
 @media screen and (max-width: 991px) {
     .container {
         width: auto;
@@ -4252,11 +4286,13 @@ blockquote {
 
     .works-link {
         justify-content: flex-start;
-        min-height: 50vh;
+        width: auto;
+        height: auto;
+        min-height: auto;
     }
 
     .works-image {
-        height: 73%;
+        height: auto;
     }
 
     .work-content {
@@ -4377,6 +4413,14 @@ blockquote {
     .heading-7 {
         font-size: 4rem;
     }
+
+    .image-12 {
+        height: 24px;
+    }
+
+    .image-13 {
+        height: 14px;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -4477,7 +4521,10 @@ blockquote {
     }
 
     .image {
+        text-align: left;
         object-position: 50% 20%;
+        text-decoration: none;
+        display: inline-block;
     }
 
     .credits-wrapper {
@@ -4610,6 +4657,11 @@ blockquote {
 
     .heading-7 {
         font-size: 3rem;
+    }
+
+    .div-block {
+        text-align: center;
+        display: block;
     }
 }
 
@@ -4851,6 +4903,10 @@ blockquote {
 
     .heading-7 {
         font-size: 2.9rem;
+    }
+
+    .image-13 {
+        height: 11px;
     }
 }
 
